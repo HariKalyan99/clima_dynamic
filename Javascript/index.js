@@ -5,6 +5,10 @@ let charactersticsSection = document.querySelector(".characterstics-main");
 let contributionsSection = document.querySelector('.contributions-main');
 let factsSection = document.querySelector(".facts-main");
 let factsInnerSection = document.querySelector(".facts");
+let storiesSection = document.querySelector('.stories-main');
+let eventsAndNewsSection = document.querySelector('.events-news-main');
+let emailSection = document.querySelector('.email-subscribe-main');
+let footerSection = document.querySelector('.footer-main');
 
 function onLoading(){
 
@@ -27,7 +31,7 @@ function onLoading(){
           </ul>
         </div>
         <i class="fa fa-navicon nav-icon" onclick="navIcon()"></i>
-        <button class="donate-btn"><span>Donate Today</span></button>
+        <button class="donate-btn" onclick="donatePage()"><span>Donate Today</span></button>
       `;
 
       navigation.append(navBarContainer);
@@ -315,15 +319,233 @@ function onLoading(){
     }
 
     
-
+    // Creating the stories
 
     
 
+    storiesSection.innerHTML = `<div class="stories">
+        <div class="front-div">
+          <div class="front-main-1">
+            <div class="slide-btn">
+              <div class="box" style="background-color: #afafaf"></div>
+              <div class="box" style="background-color: #030303"></div>
+            </div>
+            <div class="person-quote-main">
+              <div class="person-quote">
+                <h1>
+                  “I am a person who was helped by this organization. Before
+                  they gave me assistance, I was really struggling with this
+                  issue, but now my life is better.”
+                </h1>
+                <p>BALKI, FARMER AND MOTHER IN NIGER</p>
+              </div>
+            </div>
+            <button class="action-story-btn">Take Action</button>
+          </div>
+
+          <div class="front-main-2">
+            <div class="story"><p>STORIES</p></div>
+          </div>
+        </div>
+
+        <div class="img-div">
+          <div class="person-img-div">
+            <img
+              src="./assets/home/lady-baby@3x.png"
+              alt="person-image"
+              class="person-img"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="stories-sm">
+        <div class="story-sm"><p>STORIES</p></div>
+        <div class="person-img-div-sm">
+          <img
+            src="./assets/home/lady-baby@3x.png"
+            alt="person-image"
+            class="person-img-sm"
+          />
+        </div>
+        <div class="person-quote-sm">
+          <h1>
+            “I am a person who was helped by this organization. Before they gave
+            me assistance, I was really struggling with this issue, but now my
+            life is better.”
+          </h1>
+          <p>BALKI, FARMER AND MOTHER IN NIGER</p>
+        </div>
+
+        <div class="slide-btn-sm">
+          <div class="box" style="background-color: #afafaf"></div>
+          <div class="box" style="background-color: #030303"></div>
+        </div>
+
+        <button class="action-story-btn-sm">Take Action</button>
+      </div>`;
+
+    // Creating the events and news section
 
 
+      eventsAndNewsSection.innerHTML = `<div class="events-news">
+        <div>
+          <h1 class="lets-action-text">
+            LET'S Take action now to save the future.
+          </h1>
+        </div>
+        <div class="event1">
+          <div class="event1-div1">
+            <img
+              src="./assets/home/tree-planting@3x.png"
+              alt="plant_photo"
+              class="event1-div1-img"
+            />
+          </div>
+          <div class="event1-div2">
+            <div class="event">
+              <p>EVENT</p>
+            </div>
+            <h1>Earth Day 2018 community tree planting event</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+              eveniet officia perspiciatis expedita quo, incidunt neque
+              laudantium similique ad quam pariatur magni, sed illum ducimus
+              dicta dolore quibusdam, architecto ut.
+            </p>
+            <button class="read-more">Read more</button>
+          </div>
+        </div>
+
+        <div class="news">
+          <div class="news-div1">
+            <div><p class="latest_news">LATEST NEWS</p></div>
+            <h1>Updates from the fall quarterly meeting</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
+              voluptatem ducimus nihil, quae reiciendis tempora. Quasi facere
+              molestiae dolore blanditiis vero voluptatibus similique odit dicta
+              unde, quidem aut voluptate sint.
+            </p>
+            <button class="read-more">Read more</button>
+          </div>
+
+          <div class="news-div2">
+            <img
+              src="./assets/home/meeting@3x.png"
+              alt="doctor_photo"
+              class="news-div2-img"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="events-news-sm">
+        <h1 class="lets-action-text-sm">
+          LET'S Take action now to save the future.
+        </h1>
+
+        <div class="events-div-sm">
+          <div class="outer-sm">
+            <div class="inner-sm">
+              <img
+                src="./assets/home/tree-planting@3x.png"
+                alt="tree_planting_photo"
+                class="img-div-sm"
+              />
+            </div>
+            <div class="event-sm">
+              <p>EVENT</p>
+            </div>
+          </div>
+          <h1>Earth Day 2018 community tree planting event</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+            eveniet officia perspiciatis expedita quo, incidunt neque laudantium
+            similique ad quam pariatur magni, sed illum ducimus dicta dolore
+            quibusdam, architecto ut.
+          </p>
+          <button class="read-more">Read more</button>
+        </div>
+
+        <div class="events-div-sm">
+          <div class="outer-sm">
+            <div class="inner-sm">
+              <img
+                src="./assets/home/meeting@3x.png"
+                alt="meeting_photo"
+                class="img-div-sm"
+              />
+            </div>
+            <div class="news-sm">
+              <p>LATEST NEWS</p>
+            </div>
+          </div>
+          <h1>Updates from the fall quarterly meeting</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
+            voluptatem ducimus nihil, quae reiciendis tempora. Quasi facere
+            molestiae dolore blanditiis vero voluptatibus similique odit dicta
+            unde, quidem aut voluptate sint.
+          </p>
+          <button class="read-more">Read more</button>
+        </div>
+      </div>`;
+    
+    // creating the email letter
+
+    emailSection.innerHTML = `<div class="email-subscribe">
+        <h1>
+          Subscribe to our monthly newsletter and stay up to date with all news
+          and events.
+        </h1>
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          class="email-sub-input"
+        />
+        <button class="subscribe">Subscribe</button>
+      </div>`;
+
+    // creating the footer
+
+
+    footerSection.innerHTML = `<div class="footer">
+        <div class="footer-logo">
+          <h1 class="footer-logo-txt">The Green</h1>
+          <h1 class="footer-logo-txt">Tree Initiatives</h1>
+        </div>
+
+        <div class="foot">
+          <div class="contact-us"><p>CONTACT US</p></div>
+          <p>123 Anywhere St.</p>
+          <p>Cityname, NY 11206</p>
+          <p>(123) 456-7890</p>
+          <p>contact@npo.org</p>
+        </div>email-subscribe-main
+
+        <div class="foot2">
+          <div class="learn-us"><p>LEARN MORE</p></div>
+          <p>The issue</p>
+          <p>How we help</p>
+          <p>Get involved</p>
+          <p>Latest news</p>
+        </div>
+
+        <div class="foot3">
+          <div class="follow-us"><p>FOLLOW US</p></div>
+          <p>Facebook</p>
+          <p>Twitter</p>
+          <p>Instagram</p>
+          <p>Medium</p>
+        </div>
+
+        <div class="stop-climate-txt"><h1>#STOP CLIMATE CHANGE</h1></div>
+      </div>`
 
 
 }
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -343,6 +565,11 @@ function navIcon() {
     }else {
       nav.className = "d-none"
     }
+}
+
+
+function donatePage(){
+  window.location = '../donate.html';
 }
 
 
