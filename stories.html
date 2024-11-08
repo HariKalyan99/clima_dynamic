@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Stories page</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5208/5208410.png" type="image/icon type">
+  </head>
+  <body>
+   
+    <!-- section with navbar  -->
+
+    <header>
+      <div class="navbar">
+        <a href="index.html" style="text-decoration: none;">
+          <div class="logo-txt">
+            <h2>The Green</h2>
+            <h2>Trees Initiative</h2>
+          </div>
+        </a>
+        <div class="about">
+          <ul style="list-style: none">
+            <li><a href="./about.html" >About us</a></li>
+            <li><a href="./stories.html" >Our stories</a></li>
+            <li><a href="./eventsandnews.html" >Events and news</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-navicon nav-icon" onclick="navIcon()"></i>
+        <button class="donate-btn"><span>Donate Today</span></button>
+      </div>
+    </header>
+    <!-- nav-btn -->
+    <div class="d-none" id="nav-toggle" >
+      <ul style="list-style: none">
+        <li><a href="./about.html" style="text-decoration: none; color: black;">About us</a></li>
+        <li><a href="./stories.html" style="text-decoration: none; color: black;">Our stories</a></li>
+        <li><a href="./eventsandnews.html" style="text-decoration: none; color: black;">News and posts</a></li>
+      </ul>
+      <button class="donate-btn"><span>Donate Today</span></button>
+    </div>
+
+    <!-- stories section -->
+    <section class="stories-section-main">
+      <div class="stories-section">
+        <div class="work-stories">
+          <div class="work1">
+            <h1>Stories Of Our Work</h1>
+            <p >CLAUDINE, NIGERIA</p>
+            <p class="active">ZAINAB, NIGERIA</p>
+            <p>CARITAS, RWANDA</p>
+            <p>EUPHRAISE, RWANDA</p>
+            <p>UNIS, SUDAN</p>
+            <p>REGINA, SUDAN</p>
+          </div>
+          <div class="work2">
+            <img src="./assets/home/lady-baby@3x.png" alt="women_photo" class="work2-img">
+          </div>
+        </div>
+
+        <div class="worker-stories">
+          <div class="worker1">
+            <div class="worker1-main">
+              <h1>“Donec felis nunc, cursus molestie odio ut, aliquet euismod libero. Etiam ipsum nibh, interdum et consequat et, tincidunt quis sem. Suspendisse lobortis rises et.”</h1>
+            </div>
+          </div>
+          <div class="worker2">
+          <div class="worker2-main">
+            <h1>Zainab, Nigeria</h1>
+            <p>Only the first two tabs (Claudine and Zainab) have been built, in terms of the interactions. There was only a picture provided for Claudine, so Zainab's tab looks just like Claudine's.</p>
+            <p>Aliquam pellentesque nulla congue aliquam viverra. Ut cursus sollicitudin metus nec tristique. Sed eget elementum quam, non mollis orci. Aliquam dignissim, augue ac pretium suscipit, eros enim fermentum ante, et congue lectus metus nec dui. Nunc et ipsum aliquam, sodales mi eu, varius odio. Proin porta nulla nec ex blandit, nec ornare lorem ullamcorper.</p>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+     <!-- email-subsicribe -->
+     <section class="email-subscribe-main">
+        <div class="email-subscribe">
+          <h1>Subscribe to our monthly newsletter and stay up to date with all news and events.</h1>
+          <input type="email" placeholder="Enter your email address" class="email-sub-input">
+          <button class="subscribe">Subscribe</button>
+        </div>
+      </section>
+  
+      <!-- footer -->
+      <footer class="footer-main">
+        <div class="footer">
+  
+          <div class="footer-logo">
+            <h1 class="footer-logo-txt">The Green</h1>
+            <h1 class="footer-logo-txt">Tree Initiatives</h1>
+          </div>
+  
+          <div class="foot">
+            <div class="contact-us"><p>CONTACT US</p></div>
+            <p>123 Anywhere St.</p>
+            <p>Cityname, NY 11206</p>
+            <p>(123) 456-7890</p>
+            <p>contact@npo.org</p>
+          </div>
+  
+          <div class="foot2">
+            <div class="learn-us"><p>LEARN MORE</p></div>
+            <p>The issue</p>
+            <p>How we help</p>
+            <p>Get involved</p>
+            <p>Latest news</p>
+          </div>
+  
+          <div class="foot3">
+            <div class="follow-us"><p>FOLLOW US</p></div>
+            <p>Facebook</p>
+            <p>Twitter</p>
+            <p>Instagram</p>
+            <p>Medium</p>
+          </div>
+  
+          <div class="stop-climate-txt"><h1>#STOP CLIMATE CHANGE</h1></div>
+        </div>
+      </footer>
+  
+      <div class="flask">
+        <img src="https://cdn.buymeacoffee.com/widget/assets/coffee%20cup.svg" alt="flask-image" class="flask-image">
+    </div>
+  
+
+      <script>
+        function navIcon() {
+          let nav = document.querySelector("#nav-toggle");
+          if(nav.className === "d-none"){
+            nav.className = "nav-about"
+          }else {
+            nav.className = "d-none"
+          }
+        }
+        
+      </script>
+  </body>
+</html>
