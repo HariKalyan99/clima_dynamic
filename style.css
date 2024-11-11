@@ -4389,8 +4389,9 @@ label {
   }
 
   .impact-box {
-    width: 30%;
+    width: 40%;
     height: 5%;
+    padding: 0.5rem;
     color: #354463;
     display: flex;
     justify-content: center;
